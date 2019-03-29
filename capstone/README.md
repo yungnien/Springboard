@@ -1,0 +1,1 @@
+# Using the “Quora Insincere Question” dataset from Kaggle, this capstone project aims to showcase work that can be done on text-based binary classification via both traditional Machine Learning and modern Deep Learning/AI approaches. 
