@@ -1,0 +1,29 @@
+environment 
+uname_result(system='Darwin', node='yyangMac', release='18.2.0', version='Darwin Kernel Version 18.2.0: Thu Dec 20 20:46:53 PST 2018; root:xnu-4903.241.1~1/RELEASE_X86_64', machine='x86_64', processor='i386')
+svmem(total=17179869184, available=9346375680, percent=45.6, used=7301718016, free=5079195648, active=4217769984, inactive=3824582656, wired=3083948032)
+[sdiskpart(device='/dev/disk1s1', mountpoint='/', fstype='apfs', opts='rw,local,rootfs,dovolfs,journaled,multilabel'), sdiskpart(device='/dev/disk1s4', mountpoint='/private/var/vm', fstype='apfs', opts='rw,noexec,local,dovolfs,dontbrowse,journaled,multilabel,noatime')]
+
+control parameter: size 20 , tf transform True
+
+train_data shape: (1306122, 3)
+test_data shape: (375806, 2)
+
+applied train_data shape: (65306, 3)
+pplied test_data shape: (18790, 2)
+
+00:00:01:01   vectorization
+train_text_features_cv(65306, 47205)
+test_text_features_cv(18790, 47205)
+train_text_features_tf(65306, 47205)
+test_text_features_tf(18790, 47205)
+train_text_features(65306, 47205)
+test_text_features(18790, 47205)
+00:00:02:01   feature transform
+00:00:00:01   BernoulliNB
+f1_score: 0.3251336898395722
+00:00:01:01   LogisticRegression
+f1_score: 0.5334574963416256
+00:23:34:01   GradientBoostingClassifier
+f1_score: 0.4796605209247879
+2019-04-11 20:52:51.601274   end of baseline model
+
